@@ -95,7 +95,7 @@ public class SshdSession implements RemoteSession {
 
 	private ClientSession session;
 
-	SshdSession(URIish uri, Supplier<SshClient> clientFactory) {
+	public SshdSession(URIish uri, Supplier<SshClient> clientFactory) {
 		this.uri = uri;
 		this.client = clientFactory.get();
 	}
